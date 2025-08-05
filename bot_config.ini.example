@@ -17,7 +17,7 @@ APP_ACCESS_TOKEN_SECRET = your_access_token_secret_here
 MY_TWITTER_HANDLE = your_twitter_handle
 
 # Path to CSV file containing Twitter handles to monitor
-CSV_FILE_PATH = Top_Twitter_usernames.csv
+CSV_FILE_PATH = twitter_handles.csv
 
 # Cache file to store replied tweet IDs
 REPLIED_IDS_CACHE_FILE = replied_ids_cache.json

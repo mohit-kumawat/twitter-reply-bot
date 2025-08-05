@@ -5,17 +5,23 @@ Shared utility functions for tracking tweets and API calls across both bot scrip
 
 import configparser
 import logging
+import os
 from datetime import datetime, timedelta
 
 def load_config():
-    """Load configuration from config.ini"""
+    """Load configuration from bot_config.ini"""
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    # Try new filename first, fallback to old one for compatibility
+    if os.path.exists('bot_config.ini'):
+        config.read('bot_config.ini')
+    else:
+        config.read('config.ini')
     return config
 
 def save_config(config):
-    """Save configuration back to config.ini"""
-    with open('config.ini', 'w') as configfile:
+    """Save configuration back to bot_config.ini"""
+    config_file = 'bot_config.ini' if os.path.exists('bot_config.ini') else 'config.ini'
+    with open(config_file, 'w') as configfile:
         config.write(configfile)
 
 def reset_daily_counters_if_needed(config):

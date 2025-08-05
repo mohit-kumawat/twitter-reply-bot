@@ -97,10 +97,12 @@ dmypy.json
 
 # Bot-specific files - NEVER COMMIT THESE
 config.ini
+bot_config.ini
 *.db
 *.log
 *_cache.json
 replied_ids_cache.json
+replied_tweets_cache.json
 bot_analytics.json
 gemini_test_results.json
 bot_activity.log
@@ -109,6 +111,7 @@ user_discovery.log
 
 # CSV files with sensitive data
 Top_Twitter_usernames.csv
+twitter_handles.csv
 engaging_tweets_*.csv
 twitter_discovery_tweets_*.csv
 

@@ -52,18 +52,19 @@ pip install -r requirements.txt
 
 3. Configure your API keys:
 ```bash
-cp config.ini.example config.ini
-# Edit config.ini with your API keys
+cp bot_config.ini.example bot_config.ini
+# Edit bot_config.ini with your API keys
 ```
 
 4. Add Twitter handles to monitor:
 ```bash
-# Edit Top_Twitter_usernames.csv with handles you want to monitor
+cp twitter_handles.csv.example twitter_handles.csv
+# Edit twitter_handles.csv with handles you want to monitor
 ```
 
 5. Run the bot:
 ```bash
-python reply_bot_new.py
+python twitter_reply_bot.py
 ```
 
 ## ⚙️ Configuration
@@ -75,7 +76,7 @@ python reply_bot_new.py
 
 ### Settings
 - **MY_TWITTER_HANDLE**: Your Twitter username
-- **CSV_FILE_PATH**: Path to file containing Twitter handles to monitor
+- **CSV_FILE_PATH**: Path to CSV file containing Twitter handles to monitor (twitter_handles.csv)
 - **REPLIED_IDS_CACHE_FILE**: Cache file to avoid duplicate replies
 
 ## 📈 How It Works
