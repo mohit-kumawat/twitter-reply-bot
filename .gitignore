@@ -95,7 +95,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Bot-specific files
+# Bot-specific files - NEVER COMMIT THESE
 config.ini
 *.db
 *.log
@@ -103,11 +103,28 @@ config.ini
 replied_ids_cache.json
 bot_analytics.json
 gemini_test_results.json
+bot_activity.log
+growth_strategy.log
+user_discovery.log
 
 # CSV files with sensitive data
 Top_Twitter_usernames.csv
 engaging_tweets_*.csv
 twitter_discovery_tweets_*.csv
+
+# API Keys and Secrets - CRITICAL SECURITY
+*api_key*
+*secret*
+*token*
+*.env
+.env.*
+secrets.json
+credentials.json
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db-journal
 
 # macOS
 .DS_Store
