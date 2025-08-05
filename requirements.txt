@@ -1,0 +1,22 @@
+# Core dependencies
+pandas>=1.5.0
+requests>=2.28.0
+google-generativeai>=0.3.0
+tweepy>=4.14.0
+
+# Built-in modules (no installation needed)
+# configparser - built-in
+# sqlite3 - built-in
+# json - built-in
+# datetime - built-in
+# logging - built-in
+# time - built-in
+# os - built-in
+# re - built-in
+# hashlib - built-in
+# random - built-in
+# math - built-in
+# sys - built-in
+# collections - built-in
+# typing - built-in
+# textwrap - built-in
