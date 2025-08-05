@@ -1,30 +1,30 @@
 [API_KEYS]
 # Gemini API Keys (get from https://ai.google.dev/)
-GEMINI_API_KEY_1 = your_gemini_api_key_1_here
-GEMINI_API_KEY_2 = your_gemini_api_key_2_here
+gemini_api_key_1 = your_gemini_api_key_1_here
+gemini_api_key_2 = your_gemini_api_key_2_here
 
 # TwitterAPI.io Key (get from https://twitterapi.io/)
-TWITTER_API_IO_KEY = your_twitter_api_io_key_here
+twitter_api_io_key = your_twitter_api_io_key_here
 
 # Twitter App API Keys (get from https://developer.twitter.com/)
-APP_API_KEY = your_twitter_api_key_here
-APP_API_KEY_SECRET = your_twitter_api_secret_here
-APP_ACCESS_TOKEN = your_access_token_here
-APP_ACCESS_TOKEN_SECRET = your_access_token_secret_here
+app_api_key = your_twitter_api_key_here
+app_api_key_secret = your_twitter_api_secret_here
+app_access_token = your_access_token_here
+app_access_token_secret = your_access_token_secret_here
 
 [SETTINGS]
 # Your Twitter handle (without @)
-MY_TWITTER_HANDLE = your_twitter_handle
+my_twitter_handle = your_twitter_handle
 
 # Path to CSV file containing Twitter handles to monitor
-CSV_FILE_PATH = twitter_handles.csv
+csv_file_path = twitter_handles.csv
 
 # Cache file to store replied tweet IDs
-REPLIED_IDS_CACHE_FILE = replied_ids_cache.json
+replied_ids_cache_file = replied_tweets_cache.json
 
 [TRACKING]
 # Bot usage tracking (automatically managed)
-TWEETS_LAST_24H = 0
-API_CALLS_GEMINI_KEY_1 = 0
-API_CALLS_GEMINI_KEY_2 = 0
-LAST_RESET_TIME = 2025-01-01 00:00:00
+tweets_last_24h = 0
+api_calls_gemini_key_1 = 0
+api_calls_gemini_key_2 = 0
+last_reset_time = 2025-01-01 00:00:00

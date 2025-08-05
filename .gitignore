@@ -98,6 +98,7 @@ dmypy.json
 # Bot-specific files - NEVER COMMIT THESE
 config.ini
 bot_config.ini
+bot_config_backup.ini
 *.db
 *.log
 *_cache.json
